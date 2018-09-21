@@ -1,0 +1,4 @@
+:schedule:
+  twitter_worker:
+    every: '20m' #runs every 20 minutes
+    class: TwitterWorker
