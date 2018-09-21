@@ -2,6 +2,7 @@ require 'sidekiq/web'
 require 'sidekiq-scheduler/web'
 
 Rails.application.routes.draw do
+  root to: 'social_media_posts#index'
   resources :social_media_posts
   resources :topics
   resources :social_media
