@@ -5,6 +5,8 @@
 #
 # movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 # Character.create(name: 'Luke', movie: movies.first)
+SocialMedium.delete_all
+Topic.delete_all
 SocialMedium.create(name: 'Twitter')
 
 Topic.create(name: 'healthcare')
