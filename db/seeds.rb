@@ -5,19 +5,10 @@
 #
 # movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 # Character.create(name: 'Luke', movie: movies.first)
-unless SocialMedium.find_by_name('Twitter').exists?
-  SocialMedium.create(name: 'Twitter')
-end
+SocialMedium.create(name: 'Twitter')
 
-
-unless Topic.find_by_name('healthcare').exists?
-  Topic.create(name: 'healthcare')
-end
-unless Topic.find_by_name('nasa').exists?
-  Topic.create(name: 'nasa')
-end
-unless Topic.find_by_name('open source').exists?
-  Topic.create(name: 'open source')
-end
+Topic.create(name: 'healthcare')
+Topic.create(name: 'nasa')
+Topic.create(name: 'open source')
 
 
